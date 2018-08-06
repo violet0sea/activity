@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, minimal-ui">
+  <meta property="og:url" content="http://sandbox.activity.browser.intl.miui.com/world-cup/{{region}}/shareHtmls/shareHtml1.html">
+  <meta property="og:type" content="website">
+  <meta property="fb:app_id" content="1015078758641512">
+  <meta property="og:title" content="Mi Football Carnival 2018">
+  <meta property="og:description" content="Participate in Mi Football Carnival 2018 and win free prizes!">
+  <meta property="og:image" itemprop="image" content="http://sandbox.activity.browser.intl.miui.com/world-cup/{{region}}/shareHtmls/medalImage1.jpg">
+  <meta property="og:image:url" content="http://sandbox.activity.browser.intl.miui.com/world-cup/{{region}}/shareHtmls/medalImage1.jpg">
+  <meta property="og:image:width" content="1080"/>
+  <meta property="og:image:height" content="560"/>
+  <title>Mi Drop Activity</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      height: 100%;
+      max-width: 540px;
+      min-width: 320px;
+      margin: 0 auto;
+      font-family: 'sans-serif';
+    }
+    body  {
+      color: #ffffff;
+      background-color: #ec3b2f;
+    }
+    #root {
+      position: relative;
+      width: 100vw;
+      max-width: 540px;
+      min-width: 320px;
+      height: 177.8vw;;
+      max-height: 960px;
+      background: url('./getPrizebg.jpg');
+      background-size: 100% 100%;
+    }
+
+    .logo {
+      margin: 7.8% 0;
+    }
+    .logo span {
+      display: block;
+      position: relative;
+      padding-left: 80px;
+    }
+
+    .mi-drop {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .mi-drop:before {
+      position: absolute;
+      content: '';
+      display: block;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      background: url('./mi_drop.png');
+      background-size: 100% 100%;
+    }
+    h1 {
+      /* position: absolute; */
+
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      background-color: #e83631;
+    }
+    .top_banner img {
+      position: absolute;
+      top: 19%;
+      left: 5.7%;
+      width: 50px;
+      height: 50px;    
+    }
+    .aty_desc {
+      font-size: 20px;
+      margin-left: 7.7%;
+      margin-right: 6.7%;
+      padding-bottom: 8%;
+    }
+
+    .special {
+      font-weight: bold;
+      color: #ffe6aa;
+    }
+
+    .start_btn {
+      position: absolute;
+      left: 50%;
+      bottom: 9%;
+      width: 70vw;
+      height: 14.4vw;
+      max-width: 378px;
+      max-height: 78px;
+      transform: translateX(-50%);
+      background: url('./start_btn2.png');
+      background-size: 100% 100%;
+    }
+  
+  </style>
+</head>
+<body>
+  <div id="root">
+      <h1>Transfer files to get coins</h1>
+    <div class="logo">
+        <span class="mi-drop">Mi Drop</span>
+        <span>Best file transfer app</span>
+    </div>
+    <p class="aty_desc special">I got a prize in Mi Drop by transferring files to my friends!</p>
+    <p class="aty_desc">Mi Drop is a cool ad-free file transfer tool. Check it out!</p>
+    <div class="start_btn"></div>
+
+  </div>
+<script>
+  function bindStartBtn() {
+    var btn = document.querySelector('.start_btn');
+    btn.addEventListener('click', function() {
+      console.log('click');
+      window.open('https://play.google.com/store/apps/details?id=com.xiaomi.midrop&referrer=utm_source%3Dtransfershare');
+    }, false)
+  }
+  window.onload = function() {
+    bindStartBtn();
+  }
+</script>
+
+</body>
+</html>
